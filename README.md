@@ -40,7 +40,8 @@ Bit 5 = SRAM segment select (two segments of 4kB available) <BR>
 Bit 6 ~ 7 = Unused <BR>
 <BR>
 参考：
-https://www.msx.org/wiki/MegaROM_Mappers#Konami.27s_MegaROMs_with_SCC
+https://www.msx.org/wiki/MegaROM_Mappers#Game_Master_2_.28Konami.29
+
 
 <BR>
 下記Pageについては、Flash書き込みの為にBIT7 Flash controlが拡張されています。<BR>
