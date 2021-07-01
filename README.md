@@ -119,6 +119,11 @@ J1をカットしてSW1を追加することで、ROMの切り離しが可能で
 回路図およびガーバファイルが必要な場合は同梱ファイルを参考にしてください。<BR>
 ※ソフト頒布などで使用する場合はご相談頂ければ、別途製造対応可能です。<BR>
 <BR>
+## ■ CPLDについて
+CPLD Xillix XC9536XLに書き込んであるデータは「1Mbit+FRAM版」/「4Mbit版」で異なります。<BR>
+RTL上のUSE_MRAMを変更することでそれぞれのVersionを作成可能です。<BR>
+<BR>
+
 ## ■ カードリッジシェルについて
 推奨はRGRさんのTransparent Cartridge Shell for MSX Konami-styleになります。<BR>
 https://retrogamerestore.com/store/msx_cart_shell/

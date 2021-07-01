@@ -21,7 +21,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //for Product
+
+// USE ROM enable SW
 `define USE_SW
+// USE MRAM (Game Master2 Compatible Mapper) or Simple Konami8K
+`define USE_MRAM
+
 
 module ESE_RC755(
 	input SLT_CLOCK,				//from MSX Slot
@@ -131,10 +136,10 @@ module ESE_RC755(
 									Bank4Sel ? Bank4Reg[5:0] : 
 									FlashControlEnable ? (Bank1ControlSel ? 6'b00_0001 : 6'b00_0010) : 6'b00_0000;
 	//MRAM enable bit
-	`ifdef USE_SW
-	assign MRAMControlEnable 	= (SW_MRAMenable) ? 1'b0 : SelectControlReg[4];
-	`else
+	`ifdef USE_MRAM
 	assign MRAMControlEnable 	= SelectControlReg[4];
+	`else
+	assign MRAMControlEnable 	= 1'b0;
 	`endif
 
 	//ROM/MRAM Address 
