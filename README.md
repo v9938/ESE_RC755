@@ -11,14 +11,14 @@ KONAMI VRC007431互換のCPLDを搭載しており、「1Mbit+FRAM版」/「4Mbi
   
 ## ■ メモリマップ
 
-KONAMI4と同様の仕様です。0x4000-6FFFの空間はBANK0固定なのに注意してください。
+KONAMI4と同様の仕様です。0x4000-5FFFの空間はBANK0固定なのに注意してください。
 
 | Page (8kB)                        | Switching address            | Initial segment | 
 | --------------------------------- | ---------------------------- | --------------- | 
-| 4000h ~ 5FFFh (mirror: C000h ~ DFFFh) | 5000h (mirrors: 5001h ~ 57FFh) | 0  (FIXED)      | 
-| 6000h ~ 7FFFh (mirror: E000h ~ FFFFh) | 7000h (mirrors: 7001h ~ 77FFh) | 1               | 
-| 8000h ~ 9FFFh (mirror: 0000h ~ 1FFFh) | 9000h (mirrors: 9001h ~ 97FFh) | 2               | 
-| A000h ~ BFFFh (mirror: 2000h ~ 3FFFh) | B000h (mirrors: B001h ~ B7FFh) | 3               |
+| 4000h ~ 5FFFh  | 5000h (mirrors: 5001h ~ 57FFh) | 0  (FIXED)      | 
+| 6000h ~ 7FFFh  | 7000h (mirrors: 7001h ~ 77FFh) | 1               | 
+| 8000h ~ 9FFFh  | 9000h (mirrors: 9001h ~ 97FFh) | 2               | 
+| A000h ~ BFFFh  | B000h (mirrors: B001h ~ B7FFh) | 3               |
 
 <BR>
 
@@ -77,7 +77,7 @@ Flashのコントロールアドレス2AAAhは4AAAh・コントロールアド�
 書き込みには6000h ~ 7FFFhの領域を使ってください。他の領域では書き込みができない可能性があります。<BR>
 <BR>
 本製品は従来使用していたAMD系のFlashではなく、SST系を使用しています。<BR>
-CMD体系は、SMD系とほぼ同じなのですが、CMDアドレスが違います。<BR>
+CMD体系は、AMD系とほぼ同じなのですが、CMDアドレスが違います。<BR>
 また、BUSYの出方などもAMD系と異なるため注意してください。<BR>
   
  | Page 4 | A000h - AFFFh (A000h used) set bit7 = 1'b1  |  Set Flash Write mode | 
