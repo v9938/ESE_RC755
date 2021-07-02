@@ -6,9 +6,10 @@ KONAMI VRC007431互換のCPLDを搭載しており、「1Mbit+FRAM版」/「4Mbi
 「1Mbit+FRAM版は、「新10倍カードリッジ」(GAME MASTER2)と同一バンク構成になっており、<BR>
  SRAMバッテリ切れの同カセットの救済用として使用する事ができます。<BR>
 <BR>
-各カセットは、Boothにて頒布予定です。<BR>
-（URL後日記載）
-  
+各カセットは、Boothにて頒布しています。<BR>
+https://ifc.booth.pm/items/3092101 
+https://ifc.booth.pm/items/3092120
+
 ## ■ メモリマップ
 
 KONAMI4と同様の仕様です。0x4000-5FFFの空間はBANK0固定なのに注意してください。
